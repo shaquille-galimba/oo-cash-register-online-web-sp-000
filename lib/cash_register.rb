@@ -12,7 +12,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     quantity.times do
       self.total += price
-      @@items << item
+      @items << item
     end
     @last_transaction << price * quantity
   end
