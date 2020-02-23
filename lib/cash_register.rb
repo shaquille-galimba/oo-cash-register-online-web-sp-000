@@ -30,6 +30,7 @@ class CashRegister
     @items
   end
 
+  #I built this method so that customer could void multiple last transaction
   def void_last_transaction
     @total -= @last_transaction.pop
   end
