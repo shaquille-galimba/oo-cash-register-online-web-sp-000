@@ -30,6 +30,6 @@ class CashRegister
   #I thought this would be a nice way to remove customer mistakes
   #Since we don't have a delete transaction method
   def void_last_transaction
-    @total -= @last_transaction.pop
+    self.total -= @last_transaction.pop
   end
 end
